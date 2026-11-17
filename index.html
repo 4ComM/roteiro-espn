@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Roteiro Entrevista ESPN</title>
+<style>
+:root{--bg:#f6f6f3;--card:#fff;--ink:#14161a;--mute:#6b7078;--line:#d9dbd6;--acc:#0b6b3a;--accbg:#e3f3ea;--warn:#8a5a00;--warnbg:#fff1d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101214;--card:#1a1d21;--ink:#f1f2f0;--mute:#9aa0a8;--line:#2e3238;--acc:#5fd694;--accbg:#12301f;--warn:#f0c060;--warnbg:#33260a}}
+:root[data-theme="dark"]{--bg:#101214;--card:#1a1d21;--ink:#f1f2f0;--mute:#9aa0a8;--line:#2e3238;--acc:#5fd694;--accbg:#12301f;--warn:#f0c060;--warnbg:#33260a}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0;overflow:hidden;background:var(--bg);color:var(--ink);font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;touch-action:manipulation}
+#app{height:100dvh;display:flex;flex-direction:column;padding:max(10px,env(safe-area-inset-top)) 16px max(10px,env(safe-area-inset-bottom))}
+nav{display:flex;gap:8px;flex:none}
+nav button{flex:1;min-width:0;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:10px 6px;font:700 clamp(13px,1.8vw,20px)/1.1 inherit;font-family:inherit;cursor:pointer}
+nav button small{display:block;font-weight:600;color:var(--mute);margin-top:3px;font-size:.8em}
+nav button.on{background:var(--acc);border-color:var(--acc);color:var(--card)}
+nav button.on small{color:inherit;opacity:.85}
+nav button.fin:not(.on){border-color:var(--acc)}
+main{flex:1;min-height:0;position:relative;margin:12px 0}
+.page{position:absolute;inset:0;display:none;flex-direction:column;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:18px 22px}
+.page.on{display:flex}
+h1{margin:0 0 10px;font-size:clamp(30px,5.2vmin,56px);letter-spacing:.02em;line-height:1;flex:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+h1 span{font-size:.4em;font-weight:700;color:var(--mute);letter-spacing:0}
+.list{flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:.5em;font-size:30px}
+.it{display:flex;align-items:flex-start;gap:.6em;padding:.5em .6em;border-radius:.5em;border:2px solid var(--line);cursor:pointer;user-select:none;-webkit-user-select:none;line-height:1.22}
+.it .bx{flex:none;width:1.3em;height:1.3em;border-radius:.3em;border:.12em solid var(--mute);display:grid;place-items:center;margin-top:.02em;font-weight:900;color:transparent}
+.it .tx{font-weight:650;flex:1}
+.it .nt{display:block;margin-top:.2em;font-size:.68em;font-weight:700;color:var(--warn);background:var(--warnbg);border-radius:.4em;padding:.1em .5em;width:fit-content}
+.it.done{background:var(--accbg);border-color:var(--acc)}
+.it.done .bx{background:var(--acc);border-color:var(--acc);color:var(--card)}
+.it.done .tx{opacity:.55;text-decoration:line-through;text-decoration-thickness:.07em}
+.bar{flex:none;display:flex;gap:10px;align-items:center}
+.bar button{border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:14px 20px;font:700 clamp(16px,2.4vw,24px) inherit;font-family:inherit;cursor:pointer}
+.bar .pri{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.bar .mid{flex:1;text-align:center;color:var(--mute);font-weight:700;font-size:clamp(14px,2vw,20px)}
+.bar button:disabled{opacity:.3}
+</style>
+</head>
+<body>
+<div id="app">
+  <nav id="nav"></nav>
+  <main id="main"></main>
+  <div class="bar">
+    <button id="prev">&#9664; Anterior</button>
+    <div class="mid" id="mid"></div>
+    <button id="reset">Limpar checks</button>
+    <button id="next" class="pri">Próximo &#9654;</button>
+  </div>
+</div>
+<script>
+var DATA=[
+{n:"GABIGOL",s:"Gabigol",i:[
+ ["Uma das melhores e mais completas temporadas da carreira"],
+ ["Muito além de gols e assistências: papel de liderança técnica e tática no Santos"],
+ ["Está muito feliz. “Sempre que ele joga com frequência, ele vai entregar”"],
+ ["Fisicamente, está voando: melhores índices físicos do ano agora, na reta final"],
+ ["Jogador confiável. Não se machuca"],
+ ["Transferência: o que existe de concreto é uma movimentação enorme, raramente vista, da maior torcida do Brasil. Isso já é um peso muito grande. O que vem depois é outra história"],
+ ["Gabigol é apaixonado pelo Flamengo e todo mundo sabe disso"]
+]},
+{n:"LUCAS MOURA",s:"Lucas Moura",i:[
+ ["Dos jogadores (e pessoas) mais leais que já trabalhou. Vai seguir o plano de esperar a eleição"],
+ ["Nunca quebrou contratos com clubes, marcas etc."],
+ ["Mais de 200 jogos por três clubes diferentes. Quase ninguém no mundo tem isso","Desafiar o entrevistador a falar quem?"],
+ ["Prioridade dele é ficar no São Paulo. Ama o clube mais que tudo","Falar da festa do Miguel temática de SPFC (?)"],
+ ["Lesões todas de muito azar. Desmistificar “jogador bichado”. Sempre volta melhor fisicamente"],
+ ["Recuperação recorde de LCA: a fórmula mágica foi uma só, ser Lucas Moura. Um atleta na concepção da palavra"],
+ ["Tem mostrado o que soma ao São Paulo: técnica, física e mentalmente. O time é outro com ele"]
+]},
+{n:"FERREIRA",s:"Ferreira",i:[
+ ["Precisa de minutos. E merece, pelo que tem entregado nos últimos anos"],
+ ["Exemplo, jogo contra o Corinthians: 20 minutos em campo e mudou a cara do jogo. Driblou o time inteiro, deu passe para o voleio do Luciano (grande jogada, parou em Hugo Souza) e expulsou adversário"],
+ ["É o que ele faz há anos: maior driblador do futebol brasileiro desde que estreou"],
+ ["Jogador com o 1 contra 1 que ele tem precisa estar em lugares que favoreçam esse jogo"]
+]},
+{n:"ANTONY",s:"Antony",i:[
+ ["Jogou a temporada passada inteira lesionado e fez a melhor temporada da carreira"],
+ ["Mudou o patamar do Betis: desde que chegou, o time briga por tudo na parte de cima. LaLiga e competições europeias"],
+ ["Se identificou muito com o clube, a torcida, o país. Chegou a recusar o Bayern para permanecer"],
+ ["Merecia MUITO ter ido para a Copa do Mundo e entrega o que ninguém que está na Seleção hoje entrega"],
+ ["CBF: o que acontece lá dentro é um mistério","CUIDADO: tratar com delicadeza para não queimar mais"]
+]},
+{n:"THAYLLON E EDUARDO",s:"Thayllon + Eduardo",i:[
+ ["Clientes que marcam uma nova fase da agência: menos tiros, tiros mais certeiros"],
+ ["Trabalho pautado por análise e dados: identificar cenários favoráveis e ter o máximo de argumento para aumentar a chance de êxito"],
+ ["THAYLLON: uma das grandes promessas do futebol brasileiro que não recebia a devida atenção"],
+ ["THAYLLON: prometemos salto de patamar para 2027. Em menos de 6 meses, na MLS, em time de destaque, ao lado de Son"],
+ ["EDUARDO: um dos melhores trabalhos do Brasil nos últimos anos"],
+ ["“Um treinador de Série A preso na Série B.” Nossa missão e promessa: colocá-lo onde merecia. Em menos de 4 meses, promessa cumprida"],
+ ["Início muito bom no Inter. Promessas sendo cumpridas: time forte no Beira-Rio, time aguerrido, jogadores recuperados"]
+]}
+];
+var KEY="roteiro-espn-v1",st={done:{},cur:0};
+try{var r=localStorage.getItem(KEY);if(r)st=JSON.parse(r);}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+var nav=document.getElementById("nav"),main=document.getElementById("main");
+DATA.forEach(function(p,pi){
+  var b=document.createElement("button");b.dataset.p=pi;b.onclick=function(){go(pi)};nav.appendChild(b);
+  var pg=document.createElement("section");pg.className="page";pg.id="pg"+pi;
+  var h=document.createElement("h1");h.innerHTML="<b></b><span></span>";h.firstChild.textContent=p.n;pg.appendChild(h);
+  var l=document.createElement("div");l.className="list";
+  p.i.forEach(function(it,ii){
+    var d=document.createElement("div");d.className="it";d.dataset.k=pi+"-"+ii;
+    d.innerHTML='<div class="bx">&#10003;</div><div class="tx"></div>';
+    var tx=d.lastChild;tx.appendChild(document.createTextNode(it[0]));
+    if(it[1]){var n=document.createElement("span");n.className="nt";n.textContent=it[1];tx.appendChild(n);}
+    d.onclick=function(){var k=d.dataset.k;if(st.done[k])delete st.done[k];else st.done[k]=1;save();paint();};
+    l.appendChild(d);
+  });
+  pg.appendChild(l);main.appendChild(pg);
+});
+function count(pi){var c=0;DATA[pi].i.forEach(function(_,ii){if(st.done[pi+"-"+ii])c++});return c;}
+function fit(){
+  var pg=document.getElementById("pg"+st.cur),l=pg.querySelector(".list");
+  var lo=14,hi=64;
+  while(lo<hi){var m=Math.ceil((lo+hi)/2);l.style.fontSize=m+"px";
+    if(l.scrollHeight>l.clientHeight+1)hi=m-1;else lo=m;}
+  l.style.fontSize=lo+"px";
+}
+function paint(){
+  [].forEach.call(nav.children,function(b,i){
+    var c=count(i),t=DATA[i].i.length;
+    b.className=(i==st.cur?"on ":"")+(c==t?"fin":"");
+    b.innerHTML="<span></span><small></small>";b.firstChild.textContent=DATA[i].s;b.lastChild.textContent=c+" de "+t+(c==t?" ✓":"");
+  });
+  DATA.forEach(function(p,i){
+    var pg=document.getElementById("pg"+i);pg.className="page"+(i==st.cur?" on":"");
+    pg.querySelector("h1 span").textContent=count(i)+" de "+p.i.length+" falados";
+    [].forEach.call(pg.querySelectorAll(".it"),function(d){d.classList.toggle("done",!!st.done[d.dataset.k]);});
+  });
+  document.getElementById("prev").disabled=st.cur==0;
+  document.getElementById("next").disabled=st.cur==DATA.length-1;
+  document.getElementById("mid").textContent=(st.cur+1)+" / "+DATA.length;
+  fit();
+}
+function go(i){if(i<0||i>=DATA.length)return;st.cur=i;save();paint();}
+document.getElementById("prev").onclick=function(){go(st.cur-1)};
+document.getElementById("next").onclick=function(){go(st.cur+1)};
+document.getElementById("reset").onclick=function(){
+  if(!confirm("Limpar os checks de "+DATA[st.cur].s+"?"))return;
+  DATA[st.cur].i.forEach(function(_,ii){delete st.done[st.cur+"-"+ii]});save();paint();
+};
+document.addEventListener("keydown",function(e){if(e.key=="ArrowRight")go(st.cur+1);if(e.key=="ArrowLeft")go(st.cur-1);});
+var x0=null,y0=null;
+main.addEventListener("touchstart",function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY;},{passive:true});
+main.addEventListener("touchend",function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;
+  if(Math.abs(dx)>80&&Math.abs(dx)>Math.abs(dy)*2)go(st.cur+(dx<0?1:-1));},{passive:true});
+window.addEventListener("resize",fit);
+if(st.cur<0||st.cur>=DATA.length)st.cur=0;
+paint();
+</script>
+</body>
+</html>
